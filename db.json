@@ -1,0 +1,453 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "idCategory": 1,
+      "name": "Ropa"
+    },
+    {
+      "id": "2",
+      "idCategory": 2,
+      "name": "Electrónica"
+    },
+    {
+      "id": "3",
+      "idCategory": 3,
+      "name": "Limpieza"
+    },
+    {
+      "id": "4",
+      "idCategory": 4,
+      "name": "Hogar"
+    },
+    {
+      "id": "5",
+      "idCategory": 5,
+      "name": "Juguetes"
+    },
+    {
+      "id": "6",
+      "idCategory": 6,
+      "name": "Deportes"
+    },
+    {
+      "id": "7",
+      "idCategory": 7,
+      "name": "Automóviles"
+    },
+    {
+      "id": "8",
+      "idCategory": 8,
+      "name": "Libros"
+    },
+    {
+      "id": "9",
+      "idCategory": 9,
+      "name": "Mascotas"
+    },
+    {
+      "id": "10",
+      "idCategory": 10,
+      "name": "Alimentos"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "idProduct": 1,
+      "name": "Smartphone",
+      "idCategory": 2,
+      "price": 500
+    },
+    {
+      "id": "2",
+      "idProduct": 2,
+      "name": "Camiseta",
+      "idCategory": 1,
+      "price": 20
+    },
+    {
+      "id": "3",
+      "idProduct": 3,
+      "name": "Cafetera",
+      "idCategory": 4,
+      "price": 80
+    },
+    {
+      "id": "4",
+      "idProduct": 4,
+      "name": "Detergente",
+      "idCategory": 3,
+      "price": 250
+    },
+    {
+      "id": "5",
+      "idProduct": 5,
+      "name": "Pantalones",
+      "idCategory": 1,
+      "price": 75
+    },
+    {
+      "id": "6",
+      "idProduct": 6,
+      "name": "Televisor",
+      "idCategory": 2,
+      "price": 700
+    },
+    {
+      "id": "7",
+      "idProduct": 7,
+      "name": "Libro de cocina",
+      "idCategory": 8,
+      "price": 15
+    },
+    {
+      "id": "8",
+      "idProduct": 8,
+      "name": "Alimento para perros",
+      "idCategory": 9,
+      "price": 30
+    },
+    {
+      "id": "9",
+      "idProduct": 9,
+      "name": "Bicicleta",
+      "idCategory": 6,
+      "price": 200
+    },
+    {
+      "id": "10",
+      "idProduct": 10,
+      "name": "Muñeca",
+      "idCategory": 5,
+      "price": 25
+    },
+    {
+      "id": "11",
+      "idProduct": 11,
+      "name": "Refrigerador",
+      "idCategory": 4,
+      "price": 1200
+    },
+    {
+      "id": "12",
+      "idProduct": 12,
+      "name": "Aceite de cocina",
+      "idCategory": 10,
+      "price": 10
+    },
+    {
+      "id": "13",
+      "idProduct": 13,
+      "name": "Libro de ciencia ficción",
+      "idCategory": 8,
+      "price": 18
+    },
+    {
+      "id": "14",
+      "idProduct": 14,
+      "name": "Pelota de fútbol",
+      "idCategory": 6,
+      "price": 15
+    },
+    {
+      "id": "15",
+      "idProduct": 15,
+      "name": "Batería de auto",
+      "idCategory": 7,
+      "price": 100
+    }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "idClient": 1,
+      "govId": "4177075",
+      "firstName": "Lorenzo",
+      "lastName": "Cabrera"
+    },
+    {
+      "id": "2",
+      "idClient": 2,
+      "govId": "1214721",
+      "firstName": "César",
+      "lastName": "Burgos"
+    },
+    {
+      "id": "3",
+      "idClient": 3,
+      "govId": "1722607",
+      "firstName": "Nancy",
+      "lastName": "Villamayor"
+    },
+    {
+      "id": "4",
+      "idClient": 4,
+      "govId": "3459764",
+      "firstName": "Juan",
+      "lastName": "Pérez"
+    },
+    {
+      "id": "5",
+      "idClient": 5,
+      "govId": "1642375",
+      "firstName": "Ana",
+      "lastName": "Gómez"
+    },
+    {
+      "id": "6",
+      "idClient": 6,
+      "govId": "2589631",
+      "firstName": "María",
+      "lastName": "Lopez"
+    },
+    {
+      "id": "7",
+      "idClient": 7,
+      "govId": "3978215",
+      "firstName": "Carlos",
+      "lastName": "Fernández"
+    },
+    {
+      "id": "8",
+      "idClient": 8,
+      "govId": "1745826",
+      "firstName": "Paula",
+      "lastName": "Ramírez"
+    },
+    {
+      "id": "9",
+      "idClient": 9,
+      "govId": "4561239",
+      "firstName": "Roberto",
+      "lastName": "Martínez"
+    },
+    {
+      "id": "10",
+      "idClient": 10,
+      "govId": "1982764",
+      "firstName": "Sandra",
+      "lastName": "Ortiz"
+    }
+  ],
+  "sales": [
+    {
+      "id": "1",
+      "idSale": 1,
+      "date": "01-01-2024",
+      "idClient": 1,
+      "total": 500,
+      "saleDetails": [
+        {
+          "idSaleDetail": 1,
+          "idProduct": 1,
+          "quantity": 1,
+          "price": 500
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "idSale": 2,
+      "date": "02-01-2024",
+      "idClient": 2,
+      "total": 40,
+      "saleDetails": [
+        {
+          "idSaleDetail": 2,
+          "idProduct": 2,
+          "quantity": 2,
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "idSale": 3,
+      "date": "03-01-2024",
+      "idClient": 3,
+      "total": 80,
+      "saleDetails": [
+        {
+          "idSaleDetail": 3,
+          "idProduct": 3,
+          "quantity": 1,
+          "price": 80
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "idSale": 4,
+      "date": "04-01-2024",
+      "idClient": 4,
+      "total": 250,
+      "saleDetails": [
+        {
+          "idSaleDetail": 4,
+          "idProduct": 4,
+          "quantity": 1,
+          "price": 250
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "idSale": 5,
+      "date": "05-01-2024",
+      "idClient": 5,
+      "total": 75,
+      "saleDetails": [
+        {
+          "idSaleDetail": 5,
+          "idProduct": 5,
+          "quantity": 1,
+          "price": 75
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "idSale": 6,
+      "date": "06-01-2024",
+      "idClient": 6,
+      "total": 700,
+      "saleDetails": [
+        {
+          "idSaleDetail": 6,
+          "idProduct": 6,
+          "quantity": 1,
+          "price": 700
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "idSale": 7,
+      "date": "07-01-2024",
+      "idClient": 7,
+      "total": 15,
+      "saleDetails": [
+        {
+          "idSaleDetail": 7,
+          "idProduct": 7,
+          "quantity": 1,
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "idSale": 8,
+      "date": "08-01-2024",
+      "idClient": 8,
+      "total": 30,
+      "saleDetails": [
+        {
+          "idSaleDetail": 8,
+          "idProduct": 8,
+          "quantity": 1,
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "idSale": 9,
+      "date": "09-01-2024",
+      "idClient": 9,
+      "total": 200,
+      "saleDetails": [
+        {
+          "idSaleDetail": 9,
+          "idProduct": 9,
+          "quantity": 1,
+          "price": 200
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "idSale": 10,
+      "date": "10-01-2024",
+      "idClient": 10,
+      "total": 25,
+      "saleDetails": [
+        {
+          "idSaleDetail": 10,
+          "idProduct": 10,
+          "quantity": 1,
+          "price": 25
+        }
+      ]
+    },{
+      "id": "11",
+      "idSale": 11,
+      "date": "15-01-2024",
+      "idClient": 5,
+      "total": 2595,
+      "saleDetails": [
+        {
+          "idSaleDetail": 11,
+          "idProduct": 1,
+          "quantity": 3,
+          "price": 500
+        },
+        {
+          "idSaleDetail": 12,
+          "idProduct": 2,
+          "quantity": 4,
+          "price": 20
+        },
+        {
+          "idSaleDetail": 13,
+          "idProduct": 3,
+          "quantity": 1,
+          "price": 80
+        },
+        {
+          "idSaleDetail": 14,
+          "idProduct": 4,
+          "quantity": 2,
+          "price": 250
+        },
+        {
+          "idSaleDetail": 15,
+          "idProduct": 5,
+          "quantity": 1,
+          "price": 75
+        },
+        {
+          "idSaleDetail": 16,
+          "idProduct": 6,
+          "quantity": 1,
+          "price": 700
+        },
+        {
+          "idSaleDetail": 17,
+          "idProduct": 7,
+          "quantity": 2,
+          "price": 15
+        },
+        {
+          "idSaleDetail": 18,
+          "idProduct": 8,
+          "quantity": 3,
+          "price": 30
+        },
+        {
+          "idSaleDetail": 19,
+          "idProduct": 9,
+          "quantity": 1,
+          "price": 200
+        },
+        {
+          "idSaleDetail": 20,
+          "idProduct": 10,
+          "quantity": 5,
+          "price": 25
+        }
+      ]
+    }
+  ]
+}
