@@ -1,79 +1,75 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Carrito de Compras
 
-# Getting Started
+Aquí se encuentra el código fuente y la documentación para correr la app en tu máquina de forma local.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## 🚀 Comenzando
 
-## Step 1: Start the Metro Server
+Estos son los pasos necesarios para configurar y ejecutar el proyecto
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## 📋 Requisitos previos
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
 
-```bash
-# using npm
-npm start
+- [Node.js](https://nodejs.org/en/download/package-manager) versión 14 o superior
+- npm (que viene con Node.js)
+- [JDK 11](https://www.oracle.com/java/technologies/downloads/#java11-windows)
+- React Native CLI (si estás usando React Native) `npm install -g react-native-cli`
+- [Android Studio](https://developer.android.com/studio?hl=es-419): sdk, sdk plataform, NDK(Side by side), CMake, SDK Tools & virtual device (AVD)
+- Git (opcional, para clonar el repositorio)
 
-# OR using Yarn
-yarn start
-```
+## 🛠 Instalación
 
-## Step 2: Start your Application
+Luego de instalar las herramientas necesarias de Android Studio configuremos las variables de sistema necesarias.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
+1. Presiona las teclas Win+R
+2. Escribe sysdm.cpl y presiona enter
+3. Clic en la pestaña `Opciones avanzadas` y luego en `Variables de entorno`
+4. Necesitamos agregar dos:
 
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+ANDROID_HOME: C:\Users\USUARIO\AppData\Local\Android\Sdk
+JAVA_HOME: C:\Program Files\Android\Android Studio\jbr
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Clona el repositorio
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+En la terminal ejecuta el siguiente comando para clonar el repositorio en tu máquina:
 
-## Step 3: Modifying your App
+```bash
+git clone https://github.com/renzoopy/front-segundo-parcial.git
+```
 
-Now that you have successfully run the app, let's modify it.
+Navega a la carpeta del proyecto
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+```bash
+cd ../front-segundo-parcial
+```
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+Ejecuta el siguiente comando para instalar todas las dependencias del proyecto:
 
-## Congratulations! :tada:
+```bash
+npm install
+```
 
-You've successfully run and modified your React Native App. :partying_face:
+Ejecuta json-server
 
-### Now what?
+```bash
+json-server --watch db.json --port 3000
+```
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+Ejecuta el servidor
 
-# Troubleshooting
+```bash
+npm start -- --reset-cache
+```
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Si estás usando React Native, ejecuta:
 
-# Learn More
+```bash
+npm run android # Para Android
+npm run ios # Para iOS
+```
 
-To learn more about React Native, take a look at the following resources:
+### 🎉 Listo!
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Tu aplicación debería estar corriendo ahora en http://localhost:3000 (o el puerto que hayas configurado).
